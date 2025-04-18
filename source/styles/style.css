@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    min-width: 320px;
+    font-family: Roboto, serif;
+}
+
+.imges-carusel img {
+    height: 600px;
+}

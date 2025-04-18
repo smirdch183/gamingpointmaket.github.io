@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- Язык и тема -->
+<html lang="ru" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Логотип -->
+    <link rel="icon" href="source/imges/Logo.png">
+    <link rel="stylesheet" href="source/styles/style.css">
+    <title>GamingPoint</title>
+</head>
+
+<body>
+    <!-- Шапка -->
+    <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active"
+                        aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="py-3 sticky-top mb-4 border-bottom bg-dark">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                <img class="bi me-2" width="40" height="40" aria-hidden="true" src="source/imges/Logo.png" alt="Logo">
+                <span class="fs-4">GamingPoint</span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-flex" role="search">
+                <input type="search" class="form-control rounded-end-0" placeholder="Поиск" aria-label="Search">
+                <button class="btn btn-outline-primary text-light border-light-subtle rounded-start-0" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center mt-4">
+                    <h1>Добро пожаловать в GamingPoint</h1>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block w-100">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="https://store77.net/upload/w247/imageCache/526/1c6/025fb8ac2647e79a8b1c82d50b88f8f0.jpg"
+                                            class="w-100" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 slide-text">
+                                        <p>Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Beatae
+                                            maxime perferendis voluptate sunt dolorum soluta. Quam dolorem eos
+                                            dolorum, expedita vero repellendus accusamus sapiente quia magni
+                                            iste esse itaque nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="https://store77.net/upload/w247/imageCache/ab0/512/e4ddf18af5d0d79baf7e4cb8a1a7c559.png"
+                                            class="w-100" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 slide-text">
+                                        <p>Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Beatae
+                                            maxime perferendis voluptate sunt dolorum soluta. Quam dolorem eos
+                                            dolorum, expedita vero repellendus accusamus sapiente quia magni
+                                            iste esse itaque nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="https://store77.net/upload/w247/imageCache/10c/9f0/1ca89baa477cb9e442a0993969d168c5.jpg"
+                                            class="w-100" alt="...">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 slide-text">
+                                        <p>Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Beatae
+                                            maxime perferendis voluptate sunt dolorum soluta. Quam dolorem eos
+                                            dolorum, expedita vero repellendus accusamus sapiente quia magni
+                                            iste esse itaque nulla.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="col-lg-12 col-md-12 text-center mt-4">
+                    <button type="button" class="btn btn-outline-primary btn-lg my-4">Primary</button>
+                </div>
+                <div class="col-lg-12 col-md-12 text-center mt-4">
+                    <p>Мы вам можем помочь?</p>
+                </div>
+                <div class="col-lg-12 col-md-12 text-center">
+                    <img class="call-anim" style="width: 100px;" src="https://keaz.ru/img/tg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
+
+                <a href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                    aria-label="Bootstrap">
+                    <img class="bi me-2" width="40" height="40" aria-hidden="true" src="source/imges/Logo.png"
+                        alt="Logo">
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cca650ed63.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
