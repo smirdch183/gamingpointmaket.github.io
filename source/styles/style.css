@@ -8,3 +8,27 @@ body {
 .imges-carusel img {
     height: 600px;
 }
+
+.photo-title {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-title img {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.photo-text {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(5px);
+}

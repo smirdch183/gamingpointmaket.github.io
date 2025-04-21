@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <!-- Шапка -->
+    <!-- Верхняя вкладка шапки -->
     <nav class="py-2 bg-body-tertiary border-bottom">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
@@ -24,12 +24,13 @@
                 <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
             </ul>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Login</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link link-body-emphasis px-2">Login</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
             </ul>
         </div>
     </nav>
-    <header class="py-3 sticky-top mb-4 border-bottom bg-dark">
+    <!-- Шапка -->
+    <header class="py-3 sticky-top mb-0 border-bottom bg-dark">
         <div class="container d-flex flex-wrap justify-content-center">
             <a href="/"
                 class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
@@ -44,12 +45,20 @@
             </form>
         </div>
     </header>
+    <!-- Основной контент -->
     <main>
-        <div class="container">
+        <!-- Фото -->
+        <div class="photo-title">
+            <img src="source/imges/glenn-carstens-peters-0woyPEJQ7jc-unsplash.jpg" alt="">
+            <div class="effect"></div>
+            <div class="photo-text">
+                <h1 class="">Добро пожаловать в GamingPoint</h1>
+            </div>
+        </div>
+        <!-- Карусель -->
+        <div class="container mt-4">
             <div class="row">
-                <div class="col-lg-12 col-md-12 text-center mt-4">
-                    <h1>Добро пожаловать в GamingPoint</h1>
-                </div>
+
                 <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -67,12 +76,18 @@
                                         <img src="https://store77.net/upload/w247/imageCache/526/1c6/025fb8ac2647e79a8b1c82d50b88f8f0.jpg"
                                             class="w-100" alt="...">
                                     </div>
-                                    <div class="col-lg-6 col-md-6 slide-text">
-                                        <p>Lorem ipsum dolor, sit amet consectetur
-                                            adipisicing elit. Beatae
-                                            maxime perferendis voluptate sunt dolorum soluta. Quam dolorem eos
-                                            dolorum, expedita vero repellendus accusamus sapiente quia magni
-                                            iste esse itaque nulla.</p>
+                                    <div class="col-lg-6 col-md-6 slide-text d-flex flex-column">
+                                        <div>
+                                            <h2 class="text-center mt-3">Плойка</h2>
+                                            <p class="mt-4">Lorem ipsum dolor, sit amet consectetur
+                                                adipisicing elit. Beatae
+                                                maxime perferendis voluptate sunt dolorum soluta. Quam dolorem eos
+                                                dolorum, expedita vero repellendus accusamus sapiente quia magni
+                                                iste esse itaque nulla.</p>
+                                        </div>
+                                        <div class="mt-auto p-3 ms-auto">
+                                            <a class="btn btn-primary" href="#">Подробнее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -123,22 +138,80 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="col-lg-12 col-md-12 text-center mt-4">
-                    <button type="button" class="btn btn-outline-primary btn-lg my-4">Primary</button>
+            </div>
+        </div>
+        <!-- Категории -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Выберите категорию</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="" class="btn btn-outline-primary w-100 text-light" data-bs-toggle="dropdown"
+                        aria-expanded="false">Консоли</a>
+                    <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-1 shadow" data-bs-theme="dark">
+                        <li><a class="dropdown-item rounded-2" href="{% url 'playstation' %}">Playstation</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item rounded-2" href="{% url 'xbox' %}">Xbox</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-12 col-md-12 text-center mt-4">
-                    <p>Мы вам можем помочь?</p>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="" class="btn btn-outline-primary w-100 text-light">Игры</a>
                 </div>
-                <div class="col-lg-12 col-md-12 text-center">
-                    <img class="call-anim" style="width: 100px;" src="https://keaz.ru/img/tg.png" alt="">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="" class="btn btn-outline-primary w-100 text-light">Аксессуары</a>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <a href="" class="btn btn-outline-primary w-100 text-light">Ремонт</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок с картой -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Где нас найти</h2>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeab9c14ce32f1ed1acc6bb32eebaee75d83a8a914e36f11f1c99ee4985734d7b&amp;source=constructor"
+                    width="500" height="400" frameborder="0"></iframe>
+            </div>
+            <br>
+            <h4 class="text-center mb-4">Митинский радиорынок, вход 1, павильон 222</h4>
+        </div>
+
+
+        <!-- Блок с социальными сетями -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Мы в социальных сетях</h2>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://vk.com/" target="_blank" class="btn btn-outline-primary btn-lg me-2 text-light">
+                        <i class="fab fa-vk"></i> Вконтакте
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://t.me/" target="_blank" class="btn btn-outline-primary btn-lg me-2 text-light">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                </div>
+            </div>
+            <!-- Контактный номер -->
+            <div class="text-center mt-4">
+                <p class="mb-2"><strong>Контактный номер:</strong></p>
+                <div class="d-flex justify-content-center align-items-center">
+                    <span id="phone-number" class="me-3">+7 (999) 123-45-67</span>
+                    <button id="copy-phone-btn" class="btn btn-primary btn-sm">
+                        <i class="fa-solid fa-phone"></i> Позвонить
+                    </button>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+    <!-- Подвал -->
+    <footer class="fixed-bottom">
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
+                <p class="col-md-4 mb-0 text-body-secondary">© 2025 GamingPoint</p>
 
                 <a href="/"
                     class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -161,6 +234,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/cca650ed63.js" crossorigin="anonymous"></script>
+    <script src="source/js/main.js"></script>
 </body>
 
 </html>
