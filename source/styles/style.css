@@ -3,6 +3,9 @@
 body {
     min-width: 320px;
     font-family: Roboto, serif;
+    background-image: url(/source/imges/Desktop\ -\ 1.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 .imges-carusel img {
@@ -47,6 +50,12 @@ body {
 }
 
 .card-title {
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+}
+
+.text-blur {
     background-color: rgba(0, 0, 0, 0.274);
     backdrop-filter: blur(6px);
     border-radius: 5px;
