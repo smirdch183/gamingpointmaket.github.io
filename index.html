@@ -21,7 +21,8 @@
             <ul class="nav me-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active"
                         aria-current="page">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Категории</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">О нас</a></li>
             </ul>
             <ul class="nav">
                 <!-- Кнопка-триггер модального окна -->
@@ -31,7 +32,12 @@
                         Войти
                     </button>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+                <li class="nav-item">
+                    <button type="button" class="nav-link link-body-emphasis px-2" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">
+                        Регистрация
+                    </button>
+                </li>
             </ul>
             <!-- Модальное окно входа -->
             <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -46,12 +52,12 @@
                             <div class="modal-body">
                                 <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
                                 <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
-                                <div class="form-floating">
+                                <div class="form-floating m-2">
                                     <input type="email" class="form-control" id="floatingInput"
                                         placeholder="name@example.com">
                                     <label for="floatingInput">Логин</label>
                                 </div>
-                                <div class="form-floating">
+                                <div class="form-floating m-2">
                                     <input type="password" class="form-control" id="floatingPassword"
                                         placeholder="Password">
                                     <label for="floatingPassword">Пароль</label>
@@ -63,6 +69,51 @@
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-primary" type="submit">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Модальное окно регистрации -->
+            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form>
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
+                                <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+                                <div class="form-floating m-2">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Логин</label>
+                                </div>
+                                <div class="form-floating m-2">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Почта</label>
+                                </div>
+                                <div class="form-floating m-2">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Пароль</label>
+                                </div>
+                                <div class="form-floating m-2">
+                                    <input type="password" class="form-control" id="floatingPassword"
+                                        placeholder="Password">
+                                    <label for="floatingPassword">Повторить пароль</label>
+                                </div>
+
+                                <div class="my-3">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
                             </div>
                         </form>
                     </div>
@@ -84,6 +135,9 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
+            <a href="#" class="btn btn-outline-primary text-light border-light-subtle ms-2" type="submit">
+                <i class="fa-solid fa-cart-shopping "></i>
+            </a>
         </div>
     </header>
     <!-- Основной контент -->
