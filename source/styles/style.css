@@ -3,7 +3,7 @@
 body {
     min-width: 320px;
     font-family: Roboto, serif;
-    background-image: url(source/imges/background.png);
+    background-image: url(/source/imges/background.png);
     background-repeat: repeat;
     background-attachment: fixed;
 }
@@ -50,13 +50,13 @@ body {
 }
 
 .card-title {
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.473);
     backdrop-filter: blur(6px);
     border-radius: 5px;
 }
 
 .text-blur {
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.664);
     backdrop-filter: blur(6px);
     border-radius: 5px;
 }
