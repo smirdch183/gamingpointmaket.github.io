@@ -20,7 +20,7 @@
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active"
-                        aria-current="page">Home</a></li>
+                        aria-current="page">Главная</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
             </ul>
             <ul class="nav">
@@ -60,12 +60,9 @@
                                 <div class="my-3">
 
                                 </div>
-
-
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-primary" type="submit">Войти</button>
-                                <a class="btn btn-outline-secondary" href="#">Зарегистрироваться</a>
                             </div>
                         </form>
                     </div>
@@ -102,8 +99,8 @@
         <!-- Карусель -->
         <div class="container mt-4">
             <div class="row">
-
-                <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+                <h2 class="mt-4">Новости</h2>
+                <div id="carouselExampleIndicators" class="carousel slide mt-1" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -186,34 +183,66 @@
         </div>
         <!-- Категории -->
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Выберите категорию</h2>
+            <h2 class="mb-4">Категории</h2>
             <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-6 mb-3">
-                    <a href="" class="btn btn-outline-primary w-100 text-light" data-bs-toggle="dropdown"
-                        aria-expanded="false">Консоли</a>
-                    <ul class="dropdown-menu gap-1 p-2 rounded-3 mx-0 border-1 shadow" data-bs-theme="dark">
-                        <li><a class="dropdown-item rounded-2" href="{% url 'playstation' %}">Playstation</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item rounded-2" href="{% url 'xbox' %}">Xbox</a></li>
-                    </ul>
+                <!-- Первые две карточки -->
+                <div class="col-md-4 col-sm-6 col-6 mb-3 p-1">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="source/imges/marcos-ferreira-ceObEKsNQ_c-unsplash.jpg" class="card-img rounded-1"
+                                alt="Консоли">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title text-center text-light">Консоли</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-3">
-                    <a href="" class="btn btn-outline-primary w-100 text-light">Игры</a>
+
+                <div class="col-md-4 col-sm-6 col-6 mb-3 p-1">
+                    <a href="#">
+                        <div class="card h-100">
+                            <img src="source/imges/arshia-jafari-H2cOu8Av7i0-unsplash.jpg" class="card-img rounded-1"
+                                alt="Игры">
+                            <div class="card-img-overlay">
+                                <h2 class="card-title text-center text-light">Игры</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-4 col-sm-6 mb-3">
-                    <a href="" class="btn btn-outline-primary w-100 text-light">Аксессуары</a>
-                </div>
-                <div class="col-md-4 col-sm-6 mb-3">
-                    <a href="" class="btn btn-outline-primary w-100 text-light">Ремонт</a>
+
+                <!-- Третья колонка с двумя карточками -->
+                <div class="right-colon col-md-4 col-sm-6 col-6 mb-3 p-1 h-50">
+                    <div class="row g-0 m-0">
+                        <div class="col-6 col-md-12">
+                            <a href="#">
+                                <div class="card w-100">
+                                    <img src="source/imges/onur-binay-_RpPMkqTTTg-unsplash2.jpg"
+                                        class="card-img rounded-1" alt="Аксессуары">
+                                    <div class="card-img-overlay">
+                                        <h2 class="card-title text-center text-light">Аксессуары</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-12">
+                            <a href="#">
+                                <div class="card w-100">
+                                    <img src="source/imges/kristof-zerbe-hoVXzYBmIm0-unsplash2.jpg"
+                                        class="card-img rounded-1" alt="Ремонт">
+                                    <div class="card-img-overlay">
+                                        <h2 class="card-title text-center text-light">Ремонт</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Блок с картой -->
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Где нас найти</h2>
+            <h2 class="mb-4">Где нас найти</h2>
             <div class="ratio ratio-16x9">
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeab9c14ce32f1ed1acc6bb32eebaee75d83a8a914e36f11f1c99ee4985734d7b&amp;source=constructor"
@@ -226,7 +255,7 @@
 
         <!-- Блок с социальными сетями -->
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Мы в социальных сетях</h2>
+            <h2 class="mb-4">Мы в социальных сетях</h2>
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <a href="https://vk.com/" target="_blank" class="btn btn-outline-primary btn-lg me-2 text-light">

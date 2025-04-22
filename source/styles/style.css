@@ -31,4 +31,43 @@ body {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.274);
     backdrop-filter: blur(5px);
+    border-radius: 10px;
+}
+
+/* Каталог */
+.card-img {
+    object-fit: cover;
+    height: 100%;
+    /* Для первых двух карточек */
+}
+
+.h-50 .card-img {
+    height: 100%;
+    /* Заполнит 50% высоты колонки */
+}
+
+.card-title {
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+}
+
+/* .card-img {
+    object-fit: cover;
+    min-height: 200px;
+} */
+
+@media (min-width: 768px) {
+    .card-img {
+        min-height: 300px;
+        /* Высота для планшетов и десктопов */
+    }
+
+
+}
+
+@media (max-width: 766px) {
+    .right-colon {
+        width: 100%;
+    }
 }
