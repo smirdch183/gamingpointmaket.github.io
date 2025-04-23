@@ -16,130 +16,158 @@
 
 <body>
     <!-- Верхняя вкладка шапки -->
-    <nav class="py-2 bg-body-tertiary border-bottom">
+    <nav id="navbar-top" class="py-2 bg-body-tertiary border-bottom">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active"
-                        aria-current="page">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Категории</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">О нас</a></li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link link-body-emphasis px-2">
+                        <i class="fa-solid fa-location-dot"></i> Москва
+                    </a>
+                </li>
             </ul>
             <ul class="nav">
-                <!-- Кнопка-триггер модального окна -->
-                <li class="nav-item">
-                    <button type="button" class="nav-link link-body-emphasis px-2" data-bs-toggle="modal"
-                        data-bs-target="#loginModal">
-                        Войти
+                <div class="d-flex justify-content-center align-items-center">
+                    <span id="phone-number" class="me-3">+7 (999) 123-45-67</span>
+                    <button id="copy-phone-btn" class="btn btn-outline-success text-light border-light-subtle">
+                        <i class="fa-solid fa-phone"></i>
                     </button>
-                </li>
-                <li class="nav-item">
-                    <button type="button" class="nav-link link-body-emphasis px-2" data-bs-toggle="modal"
-                        data-bs-target="#registerModal">
-                        Регистрация
-                    </button>
-                </li>
+                </div>
             </ul>
-            <!-- Модальное окно входа -->
-            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Закрыть"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
-                                <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
-                                <div class="form-floating m-2">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Логин</label>
-                                </div>
-                                <div class="form-floating m-2">
-                                    <input type="password" class="form-control" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword">Пароль</label>
-                                </div>
-
-                                <div class="my-3">
-
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" type="submit">Войти</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Модальное окно регистрации -->
-            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Закрыть"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
-                                <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
-                                <div class="form-floating m-2">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Логин</label>
-                                </div>
-                                <div class="form-floating m-2">
-                                    <input type="email" class="form-control" id="floatingInput"
-                                        placeholder="name@example.com">
-                                    <label for="floatingInput">Почта</label>
-                                </div>
-                                <div class="form-floating m-2">
-                                    <input type="password" class="form-control" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword">Пароль</label>
-                                </div>
-                                <div class="form-floating m-2">
-                                    <input type="password" class="form-control" id="floatingPassword"
-                                        placeholder="Password">
-                                    <label for="floatingPassword">Повторить пароль</label>
-                                </div>
-
-                                <div class="my-3">
-
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
     </nav>
-    <!-- Шапка -->
-    <header class="py-3 sticky-top mb-0 border-bottom bg-dark">
-        <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/"
-                class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-                <img class="bi me-2" width="40" height="40" aria-hidden="true" src="source/imges/Logo.png" alt="Logo">
-                <span class="fs-4">GamingPoint</span>
-            </a>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 d-flex" role="search">
-                <input type="search" class="form-control rounded-end-0" placeholder="Поиск" aria-label="Search">
-                <button class="btn btn-outline-primary text-light border-light-subtle rounded-start-0" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+    <!-- Основная шапка -->
+    <header id="navbar-top-sticky" class="sticky-top mb-0 border-bottom bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Логотип -->
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img class="bi me-2" width="40" height="40" src="source/imges/Logo.png" alt="Logo">
+                    <span class="fs-4">GamingPoint</span>
+                </a>
+                <!-- Кнопка "бургер" -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </form>
-            <a href="#" class="btn btn-outline-primary text-light border-light-subtle ms-2" type="submit">
-                <i class="fa-solid fa-cart-shopping "></i>
-            </a>
-        </div>
+                <!-- Меню -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Каталог
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Все</a></li>
+                                    <li><a class="dropdown-item" href="#">Консоли</a></li>
+                                    <li><a class="dropdown-item" href="#">Игры</a></li>
+                                    <li><a class="dropdown-item" href="#">Аксессуары</a></li>
+                                    <li><a class="dropdown-item" href="#">Ремонт</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                    </ul>
+
+                    <!-- Поиск -->
+                    <form class="d-flex ms-auto me-1" role="search">
+                        <input class="form-control rounded-end-0" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn btn-outline-primary text-light border-light-subtle rounded-start-0"
+                            type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <!-- Корзина -->
+                        <a href="#" class="btn btn-outline-primary text-light border-light-subtle m-2 me-0 ms-0 me-1">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span> <!-- Показывает количество товаров в корзине -->
+                        </a>
+                        <!-- Войти -->
+                        <a href="#" class="btn btn-outline-primary text-light border-light-subtle m-2 me-0 ms-0 me-1"
+                            data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fa-solid fa-user"></i>
+                            Войти
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    <!-- Модальные окна -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <p><a href="#" class="btn disabled border-0 p-0" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Войти</a> / <a href="#"
+                                class="link-body-emphasis text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Зарегистрироваться</a>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
+                        <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
+                        <div class="form-floating m-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Логин</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Пароль</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <p><a href="#" class="link-body-emphasis text-decoration-none active" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Войти</a> / <a href="#" class="btn disabled border-0 p-0"
+                                data-bs-toggle="modal" data-bs-target="#registerModal">Зарегистрироваться</a>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
+                        <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+                        <div class="form-floating m-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Логин</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Почта</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Пароль</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Повторить пароль</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- Основной контент -->
     <main>
         <!-- Фото -->
@@ -238,7 +266,8 @@
         <!-- Категории -->
         <div class="container mt-4 p-3 pt-1 text-blur rounded-3">
             <h2 class="mt-4 text-nowrap">Категории</h2>
-            <h5><a class="text-nowrap ms-2 text-decoration-none" href="#">Все категории ></a></h5>
+            <h5><a class="text-nowrap ms-2 text-decoration-none" href="#">Все категории <i
+                        class="fa-solid fa-arrow-right fs-6"></i></a></h5>
             <div class="row justify-content-center">
                 <!-- Первые две карточки -->
                 <div class="col-md-4 col-sm-6 col-6 mb-3 p-1">
@@ -309,7 +338,7 @@
 
 
         <!-- Блок с социальными сетями -->
-        <div class="container mt-5 p-3 pt-1 text-blur rounded-3">
+        <!-- <div class="container mt-5 p-3 pt-1 text-blur rounded-3">
             <h2 class="mb-4 ">Мы в социальных сетях</h2>
             <div class="row justify-content-center">
                 <div class="col-auto">
@@ -323,17 +352,7 @@
                     </a>
                 </div>
             </div>
-            <!-- Контактный номер -->
-            <div class="text-center mt-4">
-                <p class="mb-2"><strong>Контактный номер:</strong></p>
-                <div class="d-flex justify-content-center align-items-center">
-                    <span id="phone-number" class="me-3">+7 (999) 123-45-67</span>
-                    <button id="copy-phone-btn" class="btn btn-primary btn-sm">
-                        <i class="fa-solid fa-phone"></i> Позвонить
-                    </button>
-                </div>
-            </div>
-        </div>
+        </div> -->
     </main>
     <!-- Подвал -->
     <footer class="">
@@ -350,10 +369,20 @@
 
                 <ul class="nav col-md-4 justify-content-end">
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
                     <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                    <li class="nav-item">
+                        <a href="https://t.me/" target="_blank" class="nav-link link-body-emphasis px-2">
+                            <i class="fab fa-telegram"></i> Телеграм
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://vk.com/" target="_blank" class="nav-link link-body-emphasis px-2">
+                            <i class="fab fa-vk"></i> Вконтакте
+                        </a>
+                    </li>
+
+
                 </ul>
             </footer>
         </div>

@@ -80,3 +80,25 @@ body {
         width: 100%;
     }
 }
+
+/* @media (max-width: 510px) {
+    #navbar-top-sticky-mobile {
+        display: block;
+    }
+
+    #navbar-top-sticky,
+    #navbar-top {
+        display: none;
+    }
+}
+
+@media (min-width: 510px) {
+    #navbar-top-sticky-mobile {
+        display: none;
+    }
+
+    #navbar-top-sticky,
+    #navbar-top {
+        display: block;
+    }
+} */

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Логотип -->
+    <link rel="icon" href="source/imges/Logo.png">
+    <link rel="stylesheet" href="source/styles/style.css">
+    <title>GamingPoint</title>
+</head>
+
+<body>
+    <!-- Верхняя вкладка шапки -->
+    <nav id="navbar-top" class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link link-body-emphasis px-2">
+                        <i class="fa-solid fa-location-dot"></i> Москва
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav">
+                <div class="d-flex justify-content-center align-items-center">
+                    <span id="phone-number" class="me-3">+7 (999) 123-45-67</span>
+                    <button id="copy-phone-btn" class="btn btn-outline-success text-light border-light-subtle">
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!-- Основная шапка -->
+    <header id="navbar-top-sticky" class="sticky-top mb-0 border-bottom bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Логотип -->
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img class="bi me-2" width="40" height="40" src="source/imges/Logo.png" alt="Logo">
+                    <span class="fs-4">GamingPoint</span>
+                </a>
+                <!-- Кнопка "бургер" -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Меню -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Каталог
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Все</a></li>
+                                    <li><a class="dropdown-item" href="#">Playstation</a></li>
+                                    <li><a class="dropdown-item" href="#">Xbox</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                    </ul>
+
+                    <!-- Поиск -->
+                    <form class="d-flex ms-auto me-1" role="search">
+                        <input class="form-control rounded-end-0" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn btn-outline-primary text-light border-light-subtle rounded-start-0"
+                            type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <!-- Корзина -->
+                        <a href="#" class="btn btn-outline-primary text-light border-light-subtle m-2 me-0 ms-0 me-1">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="cart-count">0</span> <!-- Показывает количество товаров в корзине -->
+                        </a>
+                        <!-- Войти -->
+                        <a href="#" class="btn btn-outline-primary text-light border-light-subtle m-2 me-0 ms-0 me-1"
+                            data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fa-solid fa-user"></i>
+                            Войти
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Модальные окна -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <p><a href="#" class="btn disabled border-0 p-0" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Войти</a> / <a href="#"
+                                class="link-body-emphasis text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Зарегистрироваться</a>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
+                        <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
+                        <div class="form-floating m-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Логин</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Пароль</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <p><a href="#" class="link-body-emphasis text-decoration-none active" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Войти</a> / <a href="#" class="btn disabled border-0 p-0"
+                                data-bs-toggle="modal" data-bs-target="#registerModal">Зарегистрироваться</a>
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="mb-4" src="source/imges/Logo.png" alt="Logo" width="50" height="50">
+                        <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+                        <div class="form-floating m-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Логин</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Почта</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Пароль</label>
+                        </div>
+                        <div class="form-floating m-2">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Повторить пароль</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Здесь должен быть ваш основной контент -->
+    </main>
+
+    <!-- Подвал -->
+    <footer class="fixed-bottom">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">© 2025 GamingPoint</p>
+                <a href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                    aria-label="Bootstrap">
+                    <img class="bi me-2" width="40" height="40" aria-hidden="true" src="source/imges/Logo.png"
+                        alt="Logo">
+                </a>
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cca650ed63.js" crossorigin="anonymous"></script>
+    <script src="source/js/main.js"></script>
+</body>
+
+</html>
