@@ -1,0 +1,36 @@
+/* Карусель */
+
+.imges-carusel img {
+    height: 600px;
+}
+
+.carousel-inner .carousel-item {
+    width: 100%;
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#fa-arrow-left-carousel,
+#fa-arrow-right-carousel {
+    background-color: black;
+    padding: 30px;
+    border-radius: 100px;
+}
+
+.carousel-indicators,
+.carousel-caption.d-md-block.mb-4 {
+    background-color: rgba(255, 255, 255, 0.459);
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev {
+    left: 2em;
+}
+
+.carousel-control-next {
+    right: 2em;
+}
