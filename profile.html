@@ -202,11 +202,6 @@
                             <i class="fa-solid fa-user"></i>
                             Войти
                         </a>
-                        <a href="profile.html"
-                            class="btn btn-outline-primary text-light border-light-subtle m-2 me-0 ms-0 me-1">
-                            <i class="fa-solid fa-user"></i>
-                            Профиль
-                        </a>
                     </ul>
                 </div>
             </div>
@@ -352,153 +347,217 @@
     </div>
     <!-- Основной контент -->
     <main>
-        <!-- Фото -->
-        <div class="photo-title">
-            <img src="source/imges/glenn-carstens-peters-0woyPEJQ7jc-unsplash.jpg" alt="">
-            <div class="effect"></div>
-            <div class="photo-text">
-                <h1 class="">Добро пожаловать в GamingPoint</h1>
-            </div>
-        </div>
-        <!-- Карусель -->
-        <div class="container mt-4 p-3 pt-0 text-blur rounded-3">
+        <div class="container">
+            <!-- Контент на странице -->
             <div class="row">
-                <h2 class="mt-4">Новости</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://user-images.githubusercontent.com/78242022/284473812-eda73791-83d8-47db-bb4f-21de64621094.jpg"
-                                class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-md-block mb-4">
-                                <h5>Мы открылись</h5>
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Профиль с данными пользователя -->
+                        <div class="col-md-5">
+                            <div class=" text-blur p-4 mb-4 mx-2 rounded custom-shadow">
+                                <h3 class="text-center mb-4">Профиль пользователя</h3>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3 text-center">
+                                            <i class="fa-solid fa-user fs-1"></i>
+                                            <!-- <img src="../deps/images/baseavatar.jpg" alt="Аватар пользователя"
+                                                class="img-fluid rounded-circle" style="max-width: 150px;"> -->
+                                            <input type="file" class="form-control mt-3" id="avatar" accept="image/*">
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="firstName" class="form-label">Имя*</label>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="Введите ваше имя" value="" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="lastName" class="form-label">Фамилия*</label>
+                                            <input type="text" class="form-control" id="lastName"
+                                                placeholder="Введите вашу фамилию" value="" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="username" class="form-label">Имя пользователя*</label>
+                                            <input type="text" class="form-control" id="username"
+                                                placeholder="Введите ваше имя пользователя" value="" required>
+                                        </div>
+                                        <div class="col-md-12 mb-3">
+                                            <label for="email" class="form-label">Email*</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Введите ваш email *youremail@example.com" value=""
+                                                required>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark">Сохранить</button>
+                                    <a href="#" class="btn btn-dark text-danger m-2 me-0 ms-0 me-1"
+                                        data-bs-toggle="modal" data-bs-target="#exitModal">
+                                        Выйти из аккаунта
+                                    </a>
+                                </form>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://user-images.githubusercontent.com/78242022/284473830-babc90af-7e73-4ee8-813b-7d87c4fae908.jpg"
-                                class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-md-block mb-4">
-                                <p>Some representative placeholder content for the first slide.</p>
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="exitModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <form>
+                                        <div class="modal-header">
+                                            <p>
+                                            <h1 class="h3 mb-3 fw-normal">Вы
+                                                уверены что хотите выйти?</h1>
+                                            </p>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-danger ms-auto me-auto" type="submit">Да</button>
+                                            <button class="btn btn-primary ms-auto me-auto" type="submit">Нет</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://user-images.githubusercontent.com/78242022/284473823-1d713ee7-af6a-4913-b4e4-01d2d78c7e2d.jpg"
-                                class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <i id="fa-arrow-left-carousel" class="fa-solid fa-arrow-left"></i>
-                        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <i id="fa-arrow-right-carousel" class="fa-solid fa-arrow-right"></i>
-                        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Категории -->
-        <div class="container mt-4 p-3 pt-1 text-blur rounded-3">
-            <h2 class="mt-4 text-nowrap">Категории</h2>
-            <h5><a class="text-nowrap ms-2 text-decoration-none" href="#">Все категории <i
-                        class="fa-solid fa-arrow-right fs-6"></i></a></h5>
-            <div class="row justify-content-center">
-                <!-- Первые две карточки -->
-                <div class="col-md-4 col-sm-6 col-6 mb-3 p-1">
-                    <a href="#">
-                        <div class="card h-100">
-                            <img src="source/imges/marcos-ferreira-ceObEKsNQ_c-unsplash.jpg" class="card-img rounded-1"
-                                alt="Консоли">
-                            <div class="card-img-overlay">
-                                <h2 class="card-title text-center text-light card-title-home">Консоли</h2>
+                        <!-- Корзина -->
+                        <div class="col-md-7">
+                            <div class=" text-blur p-4 mb-4 mx-2 rounded custom-shadow">
+                                <h3 class="text-center mb-4">Корзина</h3>
+                                <div class="container" id="cart-items-container">
+                                    <!-- Разметка корзины -->
+                                    <div class="card mb-3 shadow-lg">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Товар</h5>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="row text-center">
+                                                    <div class="col p-0">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <button type="button"
+                                                                    class="btn btn-dark btn-sm decrement"
+                                                                    data-cart-id="" data-cart-change-url="">-</button>
+                                                            </span>
+                                                            <input type="text" class="form-control number" value="1"
+                                                                readonly>
+                                                            <span class="input-group-btn">
+                                                                <button type="button"
+                                                                    class="btn btn-dark btn-sm increment"
+                                                                    data-cart-id="" data-cart-change-url="">+</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <p>x 100.00 = </p>
+                                                    </div>
+                                                    <div class="col p-0"><strong>100.00 $</strong></div>
+                                                    <div class="col p-0">
+                                                        <a href="#" class="remove-from-cart" data-cart-id="">
+                                                            <i class="fa-solid fa-trash-can text-danger"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card mb-3 shadow-lg">
+                                        <div class="card-footer">
+                                            <p class="float-left">Итого <strong>1</strong> товар(а) на сумму</p>
+                                            <h4 class="float-left"><strong>100.00 $</strong></h4>
+                                        </div>
+                                    </div>
+                                    <!-- Закончилась разметка корзины -->
+                                </div>
+                                <a class="btn btn-dark" href="../orders/create_order.html">
+                                    Оформить заказ
+                                </a>
                             </div>
                         </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-6 mb-3 p-1">
-                    <a href="#">
-                        <div class="card h-100">
-                            <img src="source/imges/arshia-jafari-H2cOu8Av7i0-unsplash.jpg" class="card-img rounded-1"
-                                alt="Игры">
-                            <div class="card-img-overlay">
-                                <h2 class="card-title text-center text-light card-title-home">Игры</h2>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Третья колонка с двумя карточками -->
-                <div class="right-colon col-md-4 col-sm-6 col-6 mb-3 p-1 h-50">
-                    <div class="row g-0 m-0">
-                        <div class="col-6 col-md-12">
-                            <a href="#">
-                                <div class="card w-100">
-                                    <img src="source/imges/onur-binay-_RpPMkqTTTg-unsplash2.jpg"
-                                        class="card-img rounded-1" alt="Аксессуары">
-                                    <div class="card-img-overlay">
-                                        <h2 class="card-title text-center text-light card-title-home">Аксессуары</h2>
+                        <!-- Оформленные заказы -->
+                        <div class="col-md-12">
+                            <div class=" text-blur p-4 mb-4 mx-2 rounded custom-shadow">
+                                <h3 class="text-center mb-4">Мои заказы</h3>
+                                <!-- Разметка заказов -->
+                                <div class="container">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse1" aria-expanded="false"
+                                                    aria-controls="collapse1">
+                                                    Заказ № 256 - 09 сентября 2023 9:04 | Статус:<strong class="mx-2"> В
+                                                        обработке</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse1" class="accordion-collapse collapse show"
+                                                aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <table class="table table-dark table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Товар</th>
+                                                                <th>Количество</th>
+                                                                <th>Цена</th>
+                                                                <th>Общая стоимость</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a class="text-white" href="#">Комплект стол и три
+                                                                        стула</a></td>
+                                                                <td>1</td>
+                                                                <td>255.00 $</td>
+                                                                <td>255.00 $</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="d-flex justify-content-between">
+                                                        <p><strong>Итого:</strong></p>
+                                                        <p><strong>255.00 $</strong></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading2">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                                    aria-expanded="false" aria-controls="collapse2">
+                                                    Заказ № 248 - 01 августа 2023 11:28 | Статус:
+                                                    <strong>Получен</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse2" class="accordion-collapse collapse"
+                                                aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <table class="table table-dark table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Товар</th>
+                                                                <th>Количество</th>
+                                                                <th>Цена</th>
+                                                                <th>Общая стоимость</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><a class="text-white" href="#">Стул офисный</a></td>
+                                                                <td>2</td>
+                                                                <td>30.00 $</td>
+                                                                <td>60.00 $</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-6 col-md-12">
-                            <a href="#">
-                                <div class="card w-100">
-                                    <img src="source/imges/kristof-zerbe-hoVXzYBmIm0-unsplash2.jpg"
-                                        class="card-img rounded-1" alt="Ремонт">
-                                    <div class="card-img-overlay">
-                                        <h2 class="card-title text-center text-light card-title-home">Ремонт</h2>
-                                    </div>
-                                </div>
-                            </a>
+                                <!-- Закончилась разметка заказов -->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Блок с картой -->
-        <div class="container mt-5 p-3 pt-1 text-blur rounded-3">
-            <h2 class="mt-4">Где нас найти</h2>
-            <div class="ratio ratio-16x9">
-                <iframe class="rounded-3"
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeab9c14ce32f1ed1acc6bb32eebaee75d83a8a914e36f11f1c99ee4985734d7b&amp;source=constructor"
-                    width="500" height="400" frameborder="0"></iframe>
-            </div>
-            <br>
-            <h4 class="text-center mb-4">Митинский радиорынок, вход 1, павильон 222</h4>
-        </div>
-
-
-        <!-- Блок с социальными сетями -->
-        <!-- <div class="container mt-5 p-3 pt-1 text-blur rounded-3">
-            <h2 class="mb-4 ">Мы в социальных сетях</h2>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a href="https://vk.com/" target="_blank" class="btn btn-outline-primary btn-lg me-2 text-light">
-                        <i class="fab fa-vk"></i> Вконтакте
-                    </a>
-                </div>
-                <div class="col-auto">
-                    <a href="https://t.me/" target="_blank" class="btn btn-outline-primary btn-lg me-2 text-light">
-                        <i class="fab fa-telegram"></i> Telegram
-                    </a>
-                </div>
-            </div>
-        </div> -->
     </main>
     <!-- Подвал -->
     <footer class="mt-auto">
